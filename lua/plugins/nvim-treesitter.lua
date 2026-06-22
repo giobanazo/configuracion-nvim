@@ -11,15 +11,15 @@ return {
 
 		-- Parsers a instalar (agrega o quita los que necesites)
 		require('nvim-treesitter').install({
-			'lua', 'python', 'javascript', 'rust', 'c', 
-			'cpp', 'html', 'css', 'json', 'bash', 'php'
+			'lua', 'python', 'javascript', 'typescript', 'rust', 'c',
+			'cpp', 'html', 'css', 'json', 'bash', 'php', 'java', 'regex'
 		})
 
 		-- Habilitar funciones por tipo de archivo
 		vim.api.nvim_create_autocmd('FileType', {
 			pattern = {
-				'lua', 'python', 'javascript','rust', 'c', 
-				'cpp', 'html', 'css', 'json', 'bash', 'php'
+				'lua', 'python', 'javascript', 'typescript', 'rust', 'c',
+				'cpp', 'html', 'css', 'json', 'bash', 'php', 'java'
 			},
 			callback = function()
 				-- Resaltado de sintaxis
