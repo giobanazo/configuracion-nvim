@@ -10,6 +10,7 @@ return {
       sources = {
         explorer = {
           layout = {
+						auto_hide = { "input" },
             layout = {
               position = "right",
             },
