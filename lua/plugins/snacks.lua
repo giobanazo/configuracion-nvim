@@ -4,8 +4,19 @@ return {
 	lazy = false,
 	opts = {
 		explorer = {
-			enabled = true,		
-		},	
+			enabled = true,
+	  },
+    picker = {
+      sources = {
+        explorer = {
+          layout = {
+            layout = {
+              position = "right",
+            },
+          },
+        },
+      },
+		},
 	},
 
 	keys = {
