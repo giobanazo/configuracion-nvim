@@ -9,3 +9,8 @@ vim.opt.shiftwidth = 2
 vim.opt.clipboard = "unnamedplus"
 vim.opt.swapfile = false
 vim.opt.termguicolors = true
+
+-- Desactivar los iconos de diagnóstico en el gutter
+vim.diagnostic.config({
+  signs = false,        -- elimina los iconos de error/warning/info
+})
